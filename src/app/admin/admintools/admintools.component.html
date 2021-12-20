@@ -1,0 +1,50 @@
+<div class="container border-secondary p-2">
+  <form [formGroup]="comupdate" class="row g-3" (ngSubmit)="onSubmit()">
+    <div class="col-md-6">
+      <label for="Cname" class="form-label">company name</label>
+      <input type="text" class="form-control" id="Cname" formControlName="cname">
+      <br>
+      <span style="color: red;" *ngIf="cname && cname.invalid && cname.touched">
+        enter cname
+      </span>
+    </div>
+  <div class="col-md-6">
+    <label for="phno" class="form-label">Phone number</label>
+      <input type="text" class="form-control" id="phno" formControlName="phno">
+      <br>
+      <span style="color: red;" *ngIf="phno && phno.invalid && phno.touched">
+        enter phno number
+      </span>
+  </div>
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">Address</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" formControlName="address">
+   <br>
+   <span style="color: red;" *ngIf="address && address.invalid && address.touched">
+    enter address
+  </span>
+    </div>
+  
+  
+    <div class="col-12">
+      <div class="dropdown">
+        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+          Select category
+        </a>
+  
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+      <img [src]="url1" height="200"><br>
+        <input type="file" (change)="onselectFiless($event)" formControlName="img">
+        <br>
+        <span style="color: red;" *ngIf="img && img.invalid && img.touched">
+          please upload image
+        </span>
+      </div>
+  </form>
+  </div>
+  

@@ -1,0 +1,23 @@
+
+<ng-container>
+    <div class="center">
+  <h1>LOGIN</h1>
+  <form class="post">
+      <div class="txt_field">
+          <input type="text" required>
+          <span></span>
+          <label>USERNAME</label>
+      </div>
+      <div class="txt_field">
+          <input type="password" required>
+          <span></span>
+          <label>PASSWORD</label>
+      </div>
+      <div class="pass">Forgot Password?</div>
+      <input type="submit" value="LOGIN">
+      <div class="signup_link">
+      <a [routerLink]="['/register']">Signup</a>
+      </div>
+  </form>
+</div>
+</ng-container>

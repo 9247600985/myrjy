@@ -1,0 +1,35 @@
+<div class="container border-secondary p-2">
+  <form [formGroup]="travel" class="row g-3" (ngSubmit)="onSubmit()">
+    <div class="col-md-6">
+      <label for="name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="name" formControlName="tname">
+      <br>
+    <span style="color: red;" *ngIf="tname && tname.invalid && tname.touched">
+      enter tname
+    </span>
+    </div>
+  <div class="col-md-6">
+    <label for="dist" class="form-label">Distance:</label>
+      <input type="text" class="form-control" id="dist" formControlName="tdistance">
+      <br>
+    <span style="color: red;" *ngIf="tdistance && tdistance.invalid && tdistance.touched">
+      enter distance
+    </span>
+  </div>
+  <div class="col-md-6">
+    <label for="spls" class="form-label">specials</label>
+    <input type="text" class="form-control" id="spls" formControlName="tspecials">
+    <br>
+    <span style="color: red;" *ngIf="tspecials && tspecials.invalid && tspecials.touched">
+      enter specials
+    </span>
+  </div>
+  <div class="col-md-6"></div>
+  <img [src]="url1" height="200"><br>
+  <input type="file" (change)="onselectFiless($event)" formControlName="timg">
+  <br>
+    <span style="color: red;" *ngIf="timg && timg.invalid && timg.touched">
+      upload image
+    </span>
+  </form>
+  </div>

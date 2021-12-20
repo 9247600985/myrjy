@@ -1,0 +1,23 @@
+.submain{
+    width:42vw;
+    
+    height:80vh;
+    }
+    .submain img{
+    width: 42vw;
+    max-height:40vh;
+    }
+    
+    @media only screen and (max-width: 600px) {
+      .submain{
+    width:100vw;
+    }
+    .submain,.card{
+    height:100vh;
+    }
+    .submain img{
+    width: 99vw;
+    max-height:40vh;
+    }
+    }
+    

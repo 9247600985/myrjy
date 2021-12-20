@@ -1,0 +1,63 @@
+.mainbar{
+	overflow: hidden;
+	border: 2px solid #F5F5F5;
+	background-color: white;
+
+}
+.sticky {
+	position: fixed;
+	top: 0;
+	/* width: 100%; */
+  }
+
+.mainbar a{
+	float: left;
+     display: block;
+  color: #747474;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+	margin-left: 6%;
+	font-weight: bold;
+	
+}
+.mainbar a:hover
+{
+	color: black;
+}
+.mainbar a.active{
+	color: black;
+}
+@media screen and (max-width: 600px){
+	
+
+	.mainbar{
+		display: flex;
+		overflow-x: scroll;
+		position: relative;
+	  
+	}
+	.mainbar::-webkit-scrollbar {
+		display: none;
+	  }
+  .mainbar a:hover {
+  border-bottom: 3px solid red;
+	}
+
+}
+@media screen and (max-width: 1024px){
+	.mainbar{
+		display: flex;
+		overflow-x: scroll;
+		position: relative;
+	  
+	}
+	.mainbar::-webkit-scrollbar {
+		display: none;
+	  }
+  .mainbar a:hover {
+  border-bottom: 3px solid red;
+	}
+
+}

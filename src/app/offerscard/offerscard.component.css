@@ -1,0 +1,18 @@
+.loki{
+    display: flex;
+	overflow-x: scroll;
+   position: absolute;
+}
+
+.card{
+    width: 10rem;
+    height: 18rem ;
+    border-radius: 0.5em;
+   
+}
+.card-img-top {
+    width: 8rem;
+   height: 8rem;
+   object-fit: cover;
+   border-radius: 3em;
+}

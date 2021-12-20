@@ -1,0 +1,86 @@
+
+<div class="row justify-content-center p-2">
+    <div class="col-md-6">
+        <a href="" class="float-right btn btn-outline-primary mt-1"  [routerLink]="['/login']">Log in</a>
+        <h4 class="mt-2">Sign up</h4>
+        <form [formGroup]="register" (ngsubmit)="onsubmit()">
+          <div class="row">
+              <div class="col-6 mt-2 ">
+                <label>First name </label>   
+                <input type="text" class="form-control" formControlName="fname">
+                <br>
+                <span style="color: red;" *ngIf="fname && fname.invalid && fname.touched">
+                  enter first name
+               </span>
+              </div>
+              <div class="col-6  mt-2">
+                <label>Last name</label>
+                 <input type="text" class="form-control" formControlName="lname">
+              </div>
+            <div class="col-6  mt-2 ">
+              <label>Email address</label>
+              <input class="" type="email" class="form-control" placeholder="" formControlName="email">
+              <br>
+                <span style="color: red;" *ngIf="email && email.invalid && email.touched">
+                  enter first name
+               </span>
+            </div>
+            <div class="col-6 mt-2 ">
+              <label>MOBILE NUMBER</label>
+              <input type="text" class="form-control" formControlName="phno">
+            </div> 
+           
+          <div class="col-6 mt-2 ">
+            <label>Create password</label>
+            <input class="form-control" type="password">
+          </div>
+          <div class="col-6 mt-2 ">
+            <label>Confirm password</label>
+            <input class="form-control" type="password">
+          </div>
+            <div class=" col-sm-6 mt-3 mb-2">
+                <label>Gender</label>
+                <span>&nbsp;</span>
+                <input  type="radio" name="gender" value="option1">
+                <span class=""> Male </span>
+                <span>&nbsp;</span>
+                <input type="radio" name="gender" value="option2">
+                <span class=""> Female</span>
+            </div>
+            <div class="col-sm-6 mt-3 mb-2">
+              <label>Date of Birth</label>
+            <input type="date" class="ml-3">
+            </div>
+          
+          <div class="col-6  mt-2">
+                <label>Qualification</label>
+                <select id="inputState" class="form-control">
+                  <option> Choose...</option>
+                    <option >BSC Computers</option>
+                    <option >B-TECH</option>
+                    <option>M-TECH</option>
+                    <option>MCA</option>
+
+                    <option>MSC Computers</option>
+                    <option>Others</option>
+                </select>
+              </div>
+              
+              <div class="col-6 mt-2 ">
+                <label for="exampleFormControlFile1">Upload Resume</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+              </div>
+            </div>
+                  <div class="mt-2 ">
+                <label for="remember-me" class="text-info"><span><input id="remember-me" name="remember-me" type="checkbox"></span><span class="ml-2">I Agree terms and conditions</span> </label><br>
+            </div>
+          <div class="mt-2 ">
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary w-50" [disabled]="register.invalid">Register </button>
+            </div>
+          </div> 
+      </form>
+      </div> 
+    </div> 
+  
+  

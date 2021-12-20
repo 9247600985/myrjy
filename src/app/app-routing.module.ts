@@ -9,7 +9,8 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   {path:'register',component:RegisterComponent},
   {path:'admin',component:AdminComponent},
-  {path:'main',component:UserComponent},
+  {path: '',redirectTo: '/user',pathMatch: 'full'},
+  {path:'user',component:UserComponent},
   ];
 
 @NgModule({

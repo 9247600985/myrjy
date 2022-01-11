@@ -10,6 +10,7 @@ const routes: Routes = [
   {path:'register',component:RegisterComponent},
   {path:'admin',component:AdminComponent},
   {path: '',redirectTo: '/user',pathMatch: 'full'},
+  // {path:'**',component:UserComponent},
   {path:'user',component:UserComponent},
   ];
 

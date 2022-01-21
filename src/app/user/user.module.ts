@@ -5,7 +5,6 @@ import { HomeComponent } from './home/home.component';
 import { ToolsComponent } from './tools/tools.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { NavbarComponent } from './navbar/navbar.component';
 import { TourcardComponent } from './tourcard/tourcard.component';
 import { SliderComponent } from './slider/slider.component';
 import { SidenavbarComponent } from './sidenavbar/sidenavbar.component';
@@ -23,7 +22,7 @@ import { NewsComponent } from './news/news.component';
   declarations: [UserComponent,
                  HomeComponent,
                  ToolsComponent,
-                 NavbarComponent,
+                 
                  TourcardComponent,
                  SliderComponent,
                  SidenavbarComponent,
@@ -35,8 +34,7 @@ import { NewsComponent } from './news/news.component';
     HomeComponent,
     CommonModule,
     TourcardComponent,
-    NewsComponent,
-    
+    NewsComponent,    
   ]
 })
 export class UserModule { }

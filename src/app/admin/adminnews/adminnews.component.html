@@ -1,0 +1,20 @@
+upload image
+<div class="container-fluid">
+<form class="form" [formGroup]="adminnews" (ngSubmit)="onSubmit()">
+    <div class="col-md-6">
+        <label for="Cname" class="form-label">Headline</label>
+        <input type="text" class="form-control" id="Cname" formControlName="cname" [ngClass]="{ 'is-invalid': submitted && f.cname.errors }">
+        <div *ngIf="submitted && f.cname.errors" class="invalid-feedback">
+            <div *ngIf="f.cname.errors.required">Headline is required</div>
+        </div>
+      </div>
+    <div class="col-md-6">
+      <label for="phno" class="form-label">Phone number</label>
+        <input type="text" class="form-control"  formControlName="phno" [ngClass]="{ 'is-invalid': submitted && f.phno.errors }">
+        <div *ngIf="submitted && f.phno.errors" class="invalid-feedback">
+            <div *ngIf="f.phno.errors.required">PhoneNumber is required</div>
+        </div>
+    </div>
+    
+</form>
+</div>

@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Routes } from '@angular/router';
-import { HomeComponent } from '../home/home.component';
-import { SliderComponent } from '../slider/slider.component';
+
 
 @Component({
   selector: 'app-user-dashboard',
@@ -41,8 +39,3 @@ this.WeatherData.temp_feels_like = (this.WeatherData.main.feels_like - 273.15).t
 }
 }
 
-const routes: Routes = [
-  {path:'**',component:HomeComponent},
-  {path:'slider',component:SliderComponent},
- 
-  ];

@@ -1,6 +1,7 @@
 import { Routes, RouterModule } from '@angular/router';
 import { CovidComponent } from './covid/covid.component';
 import { HomeComponent } from './home/home.component';
+import { JobComponent } from './job/job.component';
 import { NewsComponent } from './news/news.component';
 import { ToolsComponent } from './tools/tools.component';
 import { TourcardComponent } from './tourcard/tourcard.component';
@@ -23,6 +24,9 @@ const routes: Routes = [
         path:'covid', component: CovidComponent
       },
       {
+        path:'job', component: JobComponent
+      },
+      {
         path:'home', component: HomeComponent,
         children: [
           {
@@ -33,6 +37,15 @@ const routes: Routes = [
           },
           {
             path:'tools', component: ToolsComponent
+          },
+          {
+            path:'tools', component: ToolsComponent
+          },
+          {
+            path:'covid', component: CovidComponent
+          },
+          {
+            path:'job', component: JobComponent
           },
         ]
       }

@@ -12,6 +12,7 @@ import { FooterMenuComponent } from './footer-menu/footer-menu.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 import { UserRoutes } from './user.routing';
 import { NewsComponent } from './news/news.component';
+import { CovidComponent } from './covid/covid.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -21,20 +22,21 @@ import { NewsComponent } from './news/news.component';
   ],
   declarations: [UserComponent,
                  HomeComponent,
-                 ToolsComponent,
-                 
+                 ToolsComponent,                 
                  TourcardComponent,
                  SliderComponent,
                  SidenavbarComponent,
                  FooterMenuComponent,
                  UserDashboardComponent,
                  NewsComponent,
+                 CovidComponent
   ],
   exports:[
     HomeComponent,
     CommonModule,
     TourcardComponent,
-    NewsComponent,    
+    NewsComponent,  
+    CovidComponent  
   ]
 })
 export class UserModule { }

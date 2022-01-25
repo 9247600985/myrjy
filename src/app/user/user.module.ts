@@ -13,6 +13,7 @@ import { UserDashboardComponent } from './user-dashboard/user-dashboard.componen
 import { UserRoutes } from './user.routing';
 import { NewsComponent } from './news/news.component';
 import { CovidComponent } from './covid/covid.component';
+import { JobComponent } from './job/job.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -29,14 +30,16 @@ import { CovidComponent } from './covid/covid.component';
                  FooterMenuComponent,
                  UserDashboardComponent,
                  NewsComponent,
-                 CovidComponent
+                 CovidComponent,
+                 JobComponent,
   ],
   exports:[
     HomeComponent,
     CommonModule,
     TourcardComponent,
     NewsComponent,  
-    CovidComponent  
+    CovidComponent ,
+    JobComponent 
   ]
 })
 export class UserModule { }
